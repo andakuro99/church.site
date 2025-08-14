@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anchor of Hope Church Yenagoa</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor of Hope Church Yenagoa</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header>
-    <nav class="container">
-        <h1 class="logo">Anchor of Hope Church</h1>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#sermons">Sermons</a></li>
-            <li><a href="#ministries">Ministries</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">Anchor of Hope Church</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#sermons">Sermons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-text">
-        <h2>Welcome to Anchor of Hope Church</h2>
-        <p>Join us in worship, fellowship, and the Word of God.</p>
-    </div>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <h1>Welcome to Anchor of Hope Church</h1>
+    <p>Etegwe, Along Isaac Boro Expressway, Yenagoa, Bayelsa State, Nigeria</p>
+    <p class="service-times">Sunday: 8:00am–11:30am | Wednesday Bible Study: 5:00–6:15pm | Friday Prayer: 5:00–6:15pm</p>
+    <a href="#services" class="btn">Join Us</a>
+    <a href="#sermons" class="btn btn-secondary">Watch Sermons</a>
+  </div>
 </section>
 
-<!-- About -->
-<section id="about" class="container">
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
     <h2>About Us</h2>
-    <p>Anchor of Hope Church is a place where hearts are lifted in worship and lives are transformed through the power of God’s Word. Located in Yenagoa, Bayelsa State, we are dedicated to glorifying God and making disciples of all nations.</p>
-    <p><strong>Address:</strong> Etegwe, along Isaac Boro Expressway, Yenagoa, Bayelsa State, Nigeria</p>
+    <p>Anchor of Hope Church is a Christ-centered ministry committed to worship, teaching, and community outreach. Our mission is to bring hope and transform lives through the Word of God.</p>
+  </div>
 </section>
 
-<!-- Service Times -->
-<section id="services" class="container">
+<!-- SERVICES -->
+<section id="services" class="section services">
+  <div class="container">
     <h2>Service Times</h2>
-    <ul>
-        <li><strong>Sunday Service:</strong> 8:00am – 11:30am</li>
-        <li><strong>Wednesday Bible Study:</strong> 5:00pm – 6:15pm</li>
-        <li><strong>Friday Prayer Meeting:</strong> 5:00pm – 6:15pm</li>
-    </ul>
-</section>
-
-<!-- Sermons -->
-<section id="sermons" class="container">
-    <h2>Latest Sermons</h2>
-    <div class="sermon-grid">
-        <iframe src="https://www.youtube.com/embed/dLVi-7aCU5U" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/nNrHDSvwJ84" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/t30W6qqp9ZM" frameborder="0" allowfullscreen></iframe>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Sunday Service</h3>
+        <p>8:00am – 11:30am</p>
+      </div>
+      <div class="card">
+        <h3>Wednesday Bible Study</h3>
+        <p>5:00pm – 6:15pm</p>
+      </div>
+      <div class="card">
+        <h3>Friday Prayer Meeting</h3>
+        <p>5:00pm – 6:15pm</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Ministries -->
-<section id="ministries" class="container">
+<!-- SERMONS -->
+<section id="sermons" class="section sermons">
+  <div class="container">
+    <h2>Latest Sermons</h2>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/dLVi-7aCU5U" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/nNrHDSvwJ84" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/t30W6qqp9ZM" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- MINISTRIES -->
+<section id="ministries" class="section ministries">
+  <div class="container">
     <h2>Our Ministries</h2>
     <div class="ministry-grid">
-        <div class="ministry-card">
-            <h3>Worship Team</h3>
-            <p>Leading the congregation into God’s presence through music and praise.</p>
-        </div>
-        <div class="ministry-card">
-            <h3>Youth Ministry</h3>
-            <p>Empowering young people to live boldly for Christ.</p>
-        </div>
-        <div class="ministry-card">
-            <h3>Prayer Ministry</h3>
-            <p>Interceding for our church, community, and the nations.</p>
-        </div>
+      <div class="ministry-card"><i class="fas fa-music"></i><h3>Worship Team</h3></div>
+      <div class="ministry-card"><i class="fas fa-child"></i><h3>Youth Ministry</h3></div>
+      <div class="ministry-card"><i class="fas fa-praying-hands"></i><h3>Prayer Ministry</h3></div>
     </div>
+  </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="container">
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container">
     <h2>Contact Us</h2>
     <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
+    <p class="address">Etegwe, Along Isaac Boro Expressway, Yenagoa, Bayelsa State</p>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>&copy; 2025 Anchor of Hope Church Yenagoa. All Rights Reserved.</p>
+  <p>&copy; 2025 Anchor of Hope Church Yenagoa | All Rights Reserved</p>
 </footer>
 
 <script src="script.js"></script>
