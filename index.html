@@ -92,13 +92,14 @@
 <section id="contact" class="section contact">
   <div class="container">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
     <p class="address">Etegwe, Along Isaac Boro Expressway, Yenagoa, Bayelsa State</p>
+    <div id="form-status"></div>
   </div>
 </section>
 
@@ -107,6 +108,25 @@
   <p>&copy; 2025 Anchor of Hope Church Yenagoa | All Rights Reserved</p>
 </footer>
 
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<!-- Your script -->
 <script src="script.js"></script>
+
+<!-- Tawk.to Chat Widget -->
+<!--Start of Tawk.to Script--> 
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/689e560fb69b76192fe546f1/1j2l80bba';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 </body>
 </html>
