@@ -1,64 +1,158 @@
-/* GENERAL */
-body, html { margin:0; padding:0; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
 
 /* NAVBAR */
-.navbar { display:flex; justify-content:space-between; align-items:center; background:rgba(30,58,138,0.9); padding:15px 30px; position:sticky; top:0; z-index:100; }
-.navbar .logo { color: gold; font-size:1.5rem; font-weight:700; }
-.navbar ul { list-style:none; display:flex; gap:20px; }
-.navbar ul li a { text-decoration:none; color:gold; font-weight:600; }
-.navbar ul li a:hover { color:gold; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
-/* HERO */
-.hero { height:90vh; background:url('https://images.unsplash.com/photo-1506057213367-028a17ec52e8?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; color:white; position:relative; }
-.hero-overlay { background: rgba(0,0,0,0.5); padding:30px; border-radius:10px; }
-.hero h1 { font-size:3rem; margin-bottom:10px; }
-.hero p { margin-bottom:15px; font-size:1.2rem; }
-.btn { text-decoration:none; padding:10px 20px; background:gold; color:#1E3A8A; font-weight:600; border-radius:5px; margin:5px; display:inline-block; }
-.btn-secondary { background:#1E3A8A; color:gold; }
-.btn:hover { opacity:0.8; }
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+}
 
-/* SECTIONS */
-.section { padding:60px 20px; }
-h2 { text-align:center; color:#1E3A8A; margin-bottom:30px; }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-/* SERVICES */
-.service-cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-.service-cards .card { background:gold; color:#1E3A8A; padding:20px; border-radius:10px; flex:1 1 250px; text-align:center; font-weight:600; }
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
 
-/* SERMONS */
-.video-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px; }
-.video-grid iframe { width:100%; height:200px; border-radius:10px; }
+.nav-links li a:hover {
+  color: #f9c74f;
+}
 
-/* MINISTRIES */
-.ministry-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-.ministry-card { background:#1E3A8A; color:gold; padding:20px; flex:1 1 200px; text-align:center; border-radius:10px; font-weight:600; transition: transform 0.3s; }
-.ministry-card:hover { transform: translateY(-10px); }
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+background: url("https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80") no-repeat center center/cover;
+) no-repeat center center/cover;
+) no-repeat center center/cover;
+) no-repeat center center/cover;
+) no-repeat center center/cover;
+) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
 
-/* CONTACT */
-.contact form { display:grid; gap:15px; max-width:500px; margin:auto; }
-.contact input, .contact textarea { padding:10px; border-radius:5px; border:1px solid #ccc; }
-.contact button { padding:12px; border:none; border-radius:5px; background:#1E3A8A; color:gold; font-weight:600; cursor:pointer; }
-.contact button:hover { background:gold; color:#1E3A8A; }
-/* FORM STATUS MESSAGE */
-#form-status { margin-top:15px; text-align:center; font-weight:bold; color:green; }
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
 
-/* FOOTER */
-footer { background:#1E3A8A; color:gold; text-align:center; padding:15px 0; }
-/* HERO HEADING STYLE */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
 .welcome-text {
-  font-weight: 400;      /* normal */
-  font-size: 1.5rem;     /* smaller */
+  font-size: 1.5rem;
+  font-weight: 400;
   display: block;
-  color: #f0f0f0;        /* light grey */
+  color: #f9c74f;
 }
 
 .church-name {
-  font-weight: 700;      /* bold */
-  font-size: 3rem;       /* big */
-  color: #fff;           /* white */
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
 }
 
-/* VIDEO GRID */
+.hero p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.service-times {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #f9c74f;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background: #f9c74f;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* SERVICES */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #f9c74f;
+  color: #000;
+}
+
+/* SERMONS */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -70,4 +164,64 @@ footer { background:#1E3A8A; color:gold; text-align:center; padding:15px 0; }
   height: 200px;
   border-radius: 10px;
   border: none;
+}
+
+/* MINISTRIES */
+.ministry-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ministry-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.ministry-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f9c74f;
+}
+
+/* CONTACT */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact button {
+  background: #f9c74f;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
